@@ -9,3 +9,15 @@ C:\Users\MD KAIF ANSARI\G7CR .net\Day16\RoleBased\DataAcessLayer\obj\Debug\net10
 C:\Users\MD KAIF ANSARI\G7CR .net\Day16\RoleBased\DataAcessLayer\obj\Debug\net10.0\refint\PocoClasses.dll
 C:\Users\MD KAIF ANSARI\G7CR .net\Day16\RoleBased\DataAcessLayer\obj\Debug\net10.0\PocoClasses.pdb
 C:\Users\MD KAIF ANSARI\G7CR .net\Day16\RoleBased\DataAcessLayer\obj\Debug\net10.0\ref\PocoClasses.dll
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\bin\Debug\net10.0\PocoClasses.deps.json
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\bin\Debug\net10.0\PocoClasses.dll
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\bin\Debug\net10.0\PocoClasses.pdb
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\obj\Debug\net10.0\PocoClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\obj\Debug\net10.0\PocoClasses.AssemblyInfoInputs.cache
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\obj\Debug\net10.0\PocoClasses.AssemblyInfo.cs
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\obj\Debug\net10.0\PocoClasses.csproj.CoreCompileInputs.cache
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\obj\Debug\net10.0\PocoClasses.sourcelink.json
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\obj\Debug\net10.0\PocoClasses.dll
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\obj\Debug\net10.0\refint\PocoClasses.dll
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\obj\Debug\net10.0\PocoClasses.pdb
+C:\Users\MD KAIF ANSARI\OneDrive - G7 CR Technologies India Pvt Ltd\Desktop\git clone practice\TaskByMentor\RoleBased\DataAcessLayer\obj\Debug\net10.0\ref\PocoClasses.dll
