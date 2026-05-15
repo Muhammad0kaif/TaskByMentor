@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PocoClasses;
+using PocoClasses.PocoClasses;
 
 namespace RBAC.Data.Data
 {
@@ -14,7 +15,7 @@ namespace RBAC.Data.Data
         public DbSet<Role> Roles { get; set; }
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<Order> Orders { get; set; }
-
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
