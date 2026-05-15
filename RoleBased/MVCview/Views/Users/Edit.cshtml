@@ -1,0 +1,63 @@
+﻿@model MVCview.Models.UserDto
+
+<div class="card shadow p-4">
+
+    <h2 class="text-primary mb-4">
+        Edit User
+    </h2>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.Error
+        </div>
+    }
+
+    <form asp-action="Edit" method="post">
+
+        <input asp-for="Id" type="hidden" />
+
+        <div class="mb-3">
+
+            <label>Name</label>
+
+            <input asp-for="Name"
+                   class="form-control" />
+
+        </div>
+
+        <div class="mb-3">
+
+            <label>Email</label>
+
+            <input asp-for="Email"
+                   class="form-control" />
+
+        </div>
+
+        <div class="mb-3">
+
+            <label>Password</label>
+
+            <input asp-for="Password"
+                   class="form-control" />
+
+        </div>
+
+        <div class="mb-3">
+
+            <label>Role Id</label>
+
+            <input asp-for="RoleId"
+                   class="form-control" />
+
+        </div>
+
+        <button type="submit"
+                class="btn btn-primary">
+            Update User
+        </button>
+
+    </form>
+
+</div>

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="DataAcessLayer/PocoClasses.csproj" />
+  <Project Path="MVCview/MVCview.csproj" />
+  <Project Path="RBAC.Data/RBAC.Data.csproj" />
+  <Project Path="WebApi/WebApi.csproj" />
+</Solution>
