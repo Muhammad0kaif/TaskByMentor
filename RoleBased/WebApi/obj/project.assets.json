@@ -3614,11 +3614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MD KAIF ANSARI\\G7CR .net\\Day16\\RoleBased\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\MD KAIF ANSARI\\OneDrive - G7 CR Technologies India Pvt Ltd\\Desktop\\git clone practice\\TaskByMentor\\RoleBased\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\MD KAIF ANSARI\\G7CR .net\\Day16\\RoleBased\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\MD KAIF ANSARI\\OneDrive - G7 CR Technologies India Pvt Ltd\\Desktop\\git clone practice\\TaskByMentor\\RoleBased\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\MD KAIF ANSARI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MD KAIF ANSARI\\G7CR .net\\Day16\\RoleBased\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\MD KAIF ANSARI\\OneDrive - G7 CR Technologies India Pvt Ltd\\Desktop\\git clone practice\\TaskByMentor\\RoleBased\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3640,11 +3640,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\MD KAIF ANSARI\\G7CR .net\\Day16\\RoleBased\\DataAcessLayer\\PocoClasses.csproj": {
-              "projectPath": "C:\\Users\\MD KAIF ANSARI\\G7CR .net\\Day16\\RoleBased\\DataAcessLayer\\PocoClasses.csproj"
+            "C:\\Users\\MD KAIF ANSARI\\OneDrive - G7 CR Technologies India Pvt Ltd\\Desktop\\git clone practice\\TaskByMentor\\RoleBased\\DataAcessLayer\\PocoClasses.csproj": {
+              "projectPath": "C:\\Users\\MD KAIF ANSARI\\OneDrive - G7 CR Technologies India Pvt Ltd\\Desktop\\git clone practice\\TaskByMentor\\RoleBased\\DataAcessLayer\\PocoClasses.csproj"
             },
-            "C:\\Users\\MD KAIF ANSARI\\G7CR .net\\Day16\\RoleBased\\RBAC.Data\\RBAC.Data.csproj": {
-              "projectPath": "C:\\Users\\MD KAIF ANSARI\\G7CR .net\\Day16\\RoleBased\\RBAC.Data\\RBAC.Data.csproj"
+            "C:\\Users\\MD KAIF ANSARI\\OneDrive - G7 CR Technologies India Pvt Ltd\\Desktop\\git clone practice\\TaskByMentor\\RoleBased\\RBAC.Data\\RBAC.Data.csproj": {
+              "projectPath": "C:\\Users\\MD KAIF ANSARI\\OneDrive - G7 CR Technologies India Pvt Ltd\\Desktop\\git clone practice\\TaskByMentor\\RoleBased\\RBAC.Data\\RBAC.Data.csproj"
             }
           }
         }
