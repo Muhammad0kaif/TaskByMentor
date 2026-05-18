@@ -1,0 +1,37 @@
+﻿@model MVCview.Models.ReportDto
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <div class="card shadow p-4 text-center rounded-4">
+
+            <h3 class="text-primary">
+                Total Orders
+            </h3>
+
+            <h1>
+                @Model.TotalOrders
+            </h1>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="card shadow p-4 text-center rounded-4">
+
+            <h3 class="text-success">
+                Total Sales
+            </h3>
+
+            <h1>
+                ₹ @Model.TotalSales
+            </h1>
+
+        </div>
+
+    </div>
+
+</div>

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PocoClasses;
 using PocoClasses.Dto;
+using PocoClasses.PocoClasses;
 using RBAC.Data.Data;
 using WebApi.Services;
 
@@ -36,11 +37,25 @@ namespace WebApi.Controllers
 
             var token = jwt.GenerateToken(user.Id, role.RoleName);
 
-            return Ok(new
+            var refreshToken = jwt.GenerateRefreshToken();
+
+            var refreshTokenEntity = new RefreshToken
             {
-                token,
-                role = role.RoleName,
-                userId = user.Id
+                Token = refreshToken,
+                ExpiryDate = DateTime.UtcNow.AddDays(7),
+                UserId = user.Id
+            };
+
+            context.RefreshTokens.Add(refreshTokenEntity);
+
+            context.SaveChanges();
+
+            return Ok(new AuthResponseDto
+            {
+                AccessToken = token,
+                RefreshToken = refreshToken,
+                Role = role.RoleName,
+                UserId = user.Id
             });
         }
 
@@ -199,6 +214,57 @@ namespace WebApi.Controllers
             context.SaveChanges();
 
             return Ok("Password changed successfully");
+        }
+
+
+        [HttpPost("refresh-token")]
+        public IActionResult RefreshToken(RefreshTokenRequestDto dto)
+        {
+            var storedToken = context.RefreshTokens
+                .FirstOrDefault(x =>
+                    x.Token == dto.RefreshToken &&
+                    !x.IsRevoked);
+
+            if (storedToken == null)
+            {
+                return Unauthorized("Invalid Refresh Token");
+            }
+
+            if (storedToken.ExpiryDate < DateTime.UtcNow)
+            {
+                return Unauthorized("Refresh Token Expired");
+            }
+
+            var user = context.Users
+                .FirstOrDefault(x => x.Id == storedToken.UserId);
+
+            var role = context.Roles
+                .FirstOrDefault(x => x.Id == user.RoleId);
+
+            storedToken.IsRevoked = true;
+
+            var newRefreshToken =
+                jwt.GenerateRefreshToken();
+
+            var refreshTokenEntity = new RefreshToken
+            {
+                Token = newRefreshToken,
+                ExpiryDate = DateTime.UtcNow.AddDays(7),
+                UserId = user.Id
+            };
+
+            context.RefreshTokens.Add(refreshTokenEntity);
+
+            var newAccessToken =
+                jwt.GenerateToken(user.Id, role.RoleName);
+
+            context.SaveChanges();
+
+            return Ok(new
+            {
+                accessToken = newAccessToken,
+                refreshToken = newRefreshToken
+            });
         }
     }
 }

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PocoClasses.Dto
 {
-    internal class RefreshTokenRequestDto
+    public class RefreshTokenRequestDto
     {
+        public string RefreshToken { get; set; } = string.Empty;
     }
 }

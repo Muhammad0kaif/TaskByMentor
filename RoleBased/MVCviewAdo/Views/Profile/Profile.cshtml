@@ -1,0 +1,73 @@
+﻿@model PocoClasses.Dto.UserDto
+
+@if (Model == null)
+{
+    <div class="alert alert-danger">
+        User data not found. Please login again.
+    </div>
+}
+else
+{
+    <div class="container mt-4">
+
+        <div class="card shadow-lg border-0 rounded-4 p-4">
+
+            <div class="text-center mb-4">
+                <h2 class="text-primary">My Profile</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4 text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                         class="rounded-circle shadow"
+                         width="120" />
+                </div>
+
+                <div class="col-md-8">
+
+                    <table class="table table-borderless">
+
+                        <tr>
+                            <th>Name:</th>
+                            <td>@Model.Name</td>
+                        </tr>
+
+                        <tr>
+                            <th>Email:</th>
+                            <td>@Model.Email</td>
+                        </tr>
+
+                        <tr>
+                            <th>Role:</th>
+                            <td>
+                                <span class="badge bg-success">
+                                    @(Model.RoleId == 1 ? "Admin" : "User")
+                                </span>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <div class="text-end mt-3">
+                        <a asp-controller="Profile"
+                           asp-action="Edit"
+                           class="btn btn-primary btn-sm">
+                            Edit Profile
+                        </a>
+                        <a asp-controller="Profile"
+                           asp-action="ChangePassword"
+                           class="btn btn-warning btn-sm ms-2">
+                            Change Password
+                        </a>
+                    </div>
+                   
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+}

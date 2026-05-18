@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="card shadow border-0 rounded-4">
+
+    <div class="card-body p-5">
+
+        <h2 class="text-primary">
+            Welcome
+        </h2>
+
+        <p class="text-muted fs-5 mt-3">
+            Role Based Access Control System
+        </p>
+
+        <hr />
+
+        <div class="row mt-4">
+
+            <div class="col-md-4">
+
+                <div class="card bg-primary text-white shadow">
+
+                    <div class="card-body">
+
+                        <h5>User Role</h5>
+
+                        <h3>
+                            @Context.Session.GetString("role")
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card bg-success text-white shadow">
+
+                    <div class="card-body">
+
+                        <h5>Permissions</h5>
+
+                        <h3>Active</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card bg-dark text-white shadow">
+
+                    <div class="card-body">
+
+                        <h5>Security</h5>
+
+                        <h3>Enabled</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,73 @@
+﻿@model PocoClasses.Dto.UserDto
+@if (TempData["Success"] != null)
+{
+    <div class="toast text-bg-success border-0 position-fixed top-0 end-0 m-3"
+         role="alert"
+         id="successToast">
+
+        <div class="d-flex">
+
+            <div class="toast-body">
+                @TempData["Success"]
+            </div>
+
+            <button type="button"
+                    class="btn-close btn-close-white me-2 m-auto"
+                    data-bs-dismiss="toast">
+            </button>
+
+        </div>
+
+    </div>
+}
+
+<div class="card shadow p-4">
+
+    <h2 class="text-primary mb-4">Edit Profile</h2>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.Error
+        </div>
+    }
+
+    <form asp-action="Edit" method="post">
+
+        <input asp-for="Id" type="hidden" />
+
+        <div class="mb-3">
+            <label>Name</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Email</label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+
+       
+
+        <button class="btn btn-success">
+            Update Profile
+        </button>
+
+    </form>
+
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var toastEl = document.getElementById('successToast');
+
+        if (toastEl) {
+            var toast = new bootstrap.Toast(toastEl, {
+                delay: 3000
+            });
+
+            toast.show();
+        }
+    });
+</script>
