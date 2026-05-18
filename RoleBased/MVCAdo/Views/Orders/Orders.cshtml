@@ -1,0 +1,112 @@
+﻿@model List<MVCAdo.Models.OrderDto>
+
+<div class="card shadow p-4 rounded-4">
+
+    <h2 class="text-primary mb-4 ">
+        Orders
+    </h2>
+
+    <a asp-controller="Orders"
+       asp-action="Create"
+       class="btn btn-success mb-3">
+        Create Order
+    </a>
+
+    <table class="table table-bordered">
+
+        <thead class="table-dark">
+
+            <tr>
+                <th>Id</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>User Id</th>
+                <th>Actions</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.Id</td>
+
+                    <td>@item.ProductName</td>
+
+                    <td>@item.Quantity</td>
+
+                    <td>@item.Price</td>
+
+                    <td>@item.UserId</td>
+
+                    <td>
+
+                        <a asp-controller="Orders"
+                           asp-action="Edit"
+                           asp-route-id="@item.Id"
+                           class="btn btn-warning btn-sm">
+                            Edit
+                        </a>
+
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+
+    @{
+        int currentPage = ViewBag.Page ?? 1;
+        int totalPages = ViewBag.TotalPages ?? 1;
+    }
+
+    @if (totalPages > 1)
+    {
+        <nav>
+            <ul class="pagination">
+
+                @if (currentPage > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link"
+                           asp-action="Orders"
+                           asp-route-page="@(currentPage - 1)">
+                            Prev
+                        </a>
+                    </li>
+                }
+
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == currentPage ? "active" : "")">
+                        <a class="page-link"
+                           asp-action="Orders"
+                           asp-route-page="@i">
+                            @i
+                        </a>
+                    </li>
+                }
+
+                @if (currentPage < totalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link"
+                           asp-action="Orders"
+                           asp-route-page="@(currentPage + 1)">
+                            Next
+                        </a>
+                    </li>
+                }
+
+            </ul>
+        </nav>
+    }
+
+</div>

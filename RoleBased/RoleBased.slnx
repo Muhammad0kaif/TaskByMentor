@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="DataAcessLayer/PocoClasses.csproj" />
+  <Project Path="MVCAdo/MVCAdo.csproj" Id="6cb66861-bb67-4a27-9522-dbb5ec4ffde4" />
   <Project Path="MVCview/MVCview.csproj" />
   <Project Path="RBAC.Data/RBAC.Data.csproj" />
   <Project Path="RBAC_ADONET_API/RBAC_ADONET_API.csproj" Id="e441477f-26c3-4269-be10-683008f09be2" />
